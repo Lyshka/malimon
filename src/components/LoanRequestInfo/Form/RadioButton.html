@@ -1,0 +1,62 @@
+<div class="max-w-[507px] w-full flex gap-10">
+  <div class="flex items-center gap-2.5 relative radioButton">
+    <button
+      type="button"
+      class="rounded-main border border-primary w-[25px] h-[25px] flex-shrink-0 items-center justify-center flex p-1"
+    >
+      <svg
+        width="18"
+        class="checkedRadioButton active opacity-0 transition-all duration-300"
+        height="14"
+        viewBox="0 0 18 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.5 1.41L5.5 13.41L0 7.91L1.41 6.5L5.5 10.58L16.09 0L17.5 1.41Z"
+          fill="#FBE521"
+        />
+      </svg>
+    </button>
+
+    <span class="text-base">Да</span>
+
+    <input
+      name="isOtherLoan"
+      value="yes"
+      checked
+      class="absolute w-full h-full opacity-0"
+      type="radio"
+    />
+  </div>
+
+  <div class="flex items-center gap-2.5 relative radioButton">
+    <button
+      type="button"
+      class="rounded-main border border-primary w-[25px] h-[25px] flex-shrink-0 items-center justify-center flex p-1"
+    >
+      <svg
+        width="18"
+        class="checkedRadioButton opacity-0 transition-all duration-300"
+        height="14"
+        viewBox="0 0 18 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.5 1.41L5.5 13.41L0 7.91L1.41 6.5L5.5 10.58L16.09 0L17.5 1.41Z"
+          fill="#FBE521"
+        />
+      </svg>
+    </button>
+
+    <span class="text-base">Нет</span>
+
+    <input
+      value="no"
+      name="isOtherLoan"
+      class="absolute w-full h-full opacity-0"
+      type="radio"
+    />
+  </div>
+</div>

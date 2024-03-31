@@ -1,0 +1,245 @@
+<div class="flex xl:flex-row flex-col xl:gap-[116px] gap-4">
+  <p class="xl:font-bold font-normal xl:text-xl text-sm flex-shrink-0 xl:w-[187px] w-full">
+    Общая<br class="xl:block hidden"/> информация<br class="xl:block hidden"/> об организации
+  </p>
+
+  <div class="space-y-6 w-full">
+    <div class="containerInput">
+      <label class="text-base font-bold" for="name">Название</label>
+
+      <input
+        id="name"
+        name="name"
+        placeholder="Название"
+        class="max-w-[507px] w-full"
+        type="text"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="UNP">УНП</label>
+
+      <input
+        id="UNP"
+        name="UNP"
+        placeholder="192444158"
+        class="max-w-[507px] w-full"
+        type="number"
+        min="1"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="legalAddress"
+        >Юридический адрес</label
+      >
+
+      <input
+        id="legalAddress"
+        name="legalAddress"
+        placeholder="Юридический адрес"
+        class="max-w-[507px] w-full"
+        type="text"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="fio">ФИО представителя</label>
+
+      <input
+        id="fio"
+        name="fio"
+        placeholder="ФИО представителя"
+        class="max-w-[507px] w-full"
+        type="text"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="tel">Телефон</label>
+
+      <input
+        id="tel"
+        name="tel"
+        placeholder="Телефон"
+        class="max-w-[507px] w-full phone-input"
+        type="tel"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="email">E-mail</label>
+
+      <input
+        id="email"
+        name="email"
+        placeholder="E-mail"
+        class="max-w-[507px] w-full"
+        type="email"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="kindOfActivity">
+        Основной вид деятельности<br />
+        <span class="text-sm font-normal"
+          >(2-3 предложения, если есть адрес сайта)</span
+        >
+      </label>
+
+      <textarea
+        id="kindOfActivity"
+        name="kindOfActivity"
+        placeholder="Основной вид деятельности"
+        class="max-w-[507px] h-[86px] w-full"
+      ></textarea>
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="countWorkers"
+        >Численность сотрудников</label
+      >
+
+      <input
+        id="countWorkers"
+        name="countWorkers"
+        placeholder="7"
+        class="max-w-[507px] w-full"
+        type="number"
+        min="1"
+      />
+    </div>
+
+    <p class="text-base font-bold">Гарантирую, что:</p>
+
+    <div class="chexboxContainer">
+      <div
+        class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+      >
+        <input
+          class="absolute z-[1] w-full h-full opacity-0"
+          checked
+          name="increasedRisk"
+          id="increasedRisk"
+          type="checkbox"
+        />
+        <svg
+          class="opacity-0 checkIcon active transition-all"
+          width="18"
+          height="14"
+          viewBox="0 0 18 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+            fill="#FBE521"
+          />
+        </svg>
+      </div>
+
+      <label for="increasedRisk" class="text-base">
+        организация не включена в список компаний и индивидуальных
+        предпринимателей с повышенным риском совершения правонарушений в
+        экономической сфере;
+      </label>
+    </div>
+
+    <div class="chexboxContainer">
+      <div
+        class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+      >
+        <input
+          class="absolute z-[1] w-full h-full opacity-0"
+          checked
+          name="bankruptcy"
+          id="bankruptcy"
+          type="checkbox"
+        />
+        <svg
+          class="opacity-0 checkIcon active transition-all"
+          width="18"
+          height="14"
+          viewBox="0 0 18 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+            fill="#FBE521"
+          />
+        </svg>
+      </div>
+
+      <label for="bankruptcy" class="text-base">
+        организация не находится в процессе ликвидации, реорганизации, а также
+        не признан в установленном законодательными актами порядке экономически
+        несостоятельным (банкротом);
+      </label>
+    </div>
+
+    <div class="chexboxContainer">
+      <div
+        class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+      >
+        <input
+          class="absolute z-[1] w-full h-full opacity-0"
+          checked
+          name="debt"
+          id="debt"
+          type="checkbox"
+        />
+        <svg
+          class="opacity-0 checkIcon active transition-all"
+          width="18"
+          height="14"
+          viewBox="0 0 18 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+            fill="#FBE521"
+          />
+        </svg>
+      </div>
+
+      <label for="debt" class="text-base">
+        отсутствуют задолженности по уплате налогов, сборов (пошлин) на дату
+        заполнения анкеты;
+      </label>
+    </div>
+
+    <div class="chexboxContainer">
+      <div
+        class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+      >
+        <input
+          class="absolute z-[1] w-full h-full opacity-0"
+          checked
+          name="courtCases"
+          id="courtCases"
+          type="checkbox"
+        />
+        <svg
+          class="opacity-0 checkIcon active transition-all"
+          width="18"
+          height="14"
+          viewBox="0 0 18 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+            fill="#FBE521"
+          />
+        </svg>
+      </div>
+
+      <label for="courtCases" class="text-base">
+        в отношении организации не ведутся судебные дела, расследования, которые
+        могут повлиять на дальнейшее осуществление деятельности.
+      </label>
+    </div>
+  </div>
+</div>

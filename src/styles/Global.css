@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-white font-Jost bg-[#212020];
+  }
+  body {
+    @apply min-h-screen flex flex-col;
+  }
+  .container-main {
+    @apply max-w-[1150px] w-full xl:px-0 px-[15px];
+  }
+  button,
+  a {
+    @apply transition-all;
+  }
+  input,
+  textarea {
+    @apply ring-0 text-black outline-none rounded-main px-5 py-3 bg-white placeholder:text-gray-100 xl:text-base text-sm w-full;
+  }
+  input {
+    @apply h-[47px];
+  }
+}
+
+@layer components {
+  .menuMobileFooter .menuList a {
+    @apply xl:text-base text-sm xl:font-medium font-normal hover:opacity-50;
+  }
+
+  .menuMobileFooter button.open svg {
+    @apply rotate-180;
+  }
+
+  .menuMobileFooter .menuList.open {
+    @apply grid-rows-1 xl:mt-9 mt-4;
+  }
+
+  .checkIcon.active {
+    @apply opacity-100;
+  }
+
+  .chexbox {
+    @apply flex-shrink-0 flex-grow-0;
+  }
+
+  .chexboxContainer {
+    @apply flex items-center gap-2;
+  }
+
+  .chexboxContainer label {
+    @apply xl:text-base text-sm;
+  }
+
+  .containerInput {
+    @apply flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-2.5 w-full;
+  }
+
+  .currencyList.open,
+  .multipleSelectList.open,
+  .anotherContainer.active {
+    @apply grid-rows-1;
+  }
+
+  .iconArrow.open {
+    @apply rotate-180;
+  }
+
+  .shadow-card-active-project {
+    box-shadow: 0px 4px 10px 0px #000000cc;
+  }
+
+  .social-icon-news-letter {
+    @apply xl:w-20 w-[30px] xl:h-20 h-[30px];
+  }
+
+  .tooltipContainer.visible {
+    @apply z-0 overflow-visible opacity-100;
+  }
+
+  .checkedRadioButton.active {
+    @apply opacity-100;
+  }
+
+  .iconViseblePassword.visible {
+    @apply opacity-100;
+  }
+
+  .textAccardion.open {
+    @apply grid-rows-1 xl:mt-4 mt-2;
+  }
+
+  .questAccardionContainer.active {
+    @apply flex;
+  }
+
+  .selectQuest.active {
+    @apply bg-primary text-dark-secondary;
+  }
+
+  .shadow-ItemQuestMobile {
+    box-shadow: 0px -4px 4px 0px #00000040;
+  }
+
+  .containerAccardionMobile.open {
+    @apply grid-rows-1 mt-2;
+  }
+
+  .item-nav-setting-profile.current {
+    @apply text-primary border-primary;
+  }
+
+  .PlaceOfWorkContainer.active, .entrepreneurialActivityContainer.active, .otherContainer.active {
+    @apply grid-rows-1 !mb-6;
+  }
+}

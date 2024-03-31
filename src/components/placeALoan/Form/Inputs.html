@@ -1,0 +1,41 @@
+<div class="xl:space-y-6 space-y-2 max-w-[448px]">
+  <div class="space-y-1">
+    <label class="font-bold text-base" for="name">Имя</label>
+    <input type="text" name="name" id="name" placeholder="Ваше имя" />
+  </div>
+
+  <div class="space-y-1">
+    <label class="font-bold text-base" for="tel">Телефон</label>
+    <input
+      type="tel"
+      class="phone-input"
+      name="tel"
+      id="tel"
+      placeholder="375333256565"
+    />
+  </div>
+
+  <div class="space-y-1">
+    <label class="font-bold text-base" for="email">Email адрес</label>
+    <input type="email" name="email" id="email" placeholder="Ваш email" />
+  </div>
+
+  <div class="space-y-1">
+    <label class="text-base font-bold" for="sum"
+      >Сумма</label
+    >
+
+    <div class="max-w-[507px] flex w-full">
+      <input
+        id="sum"
+        name="sum"
+        placeholder="10000"
+        type="number"
+        min="1"
+      />
+      <load
+        src="src/components/LoanRequestQuestionnaire/Form/CurrencySelect.html"
+      />
+    </div>
+  </div>
+</div>

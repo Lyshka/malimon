@@ -1,0 +1,65 @@
+<div class="flex xl:flex-row flex-col xl:gap-[116px] gap-4">
+  <p
+    class="xl:font-bold font-normal xl:text-xl text-sm flex-shrink-0 xl:w-[187px] w-full"
+  >
+    Персональные данные
+  </p>
+
+  <div class="space-y-6 w-full">
+    <div class="containerInput">
+      <div class="flex items-center gap-2">
+        <label class="text-base font-bold" for="login">Логин</label>
+
+        <load src="src/components/Tooltip.html" />
+      </div>
+
+      <input
+        id="login"
+        name="login"
+        placeholder="Введите ваш логин"
+        class="max-w-[507px] w-full"
+        type="text"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="fio">Фамилия Имя Отчество</label>
+
+      <div class="space-y-1 max-w-[507px] w-full">
+        <input
+          id="fio"
+          name="fio"
+          placeholder="Антонов Антон Антонович"
+          class=""
+          type="text"
+        />
+
+        <p class="text-sm">отчество если есть</p>
+      </div>
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="tel">Номер телефона</label>
+
+      <input
+        id="tel"
+        name="tel"
+        placeholder="+375336745018"
+        class="max-w-[507px] w-full phone-input"
+        type="tel"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="email">E-mail</label>
+
+      <input
+        id="email"
+        name="email"
+        placeholder="antonov@gmail.com"
+        class="max-w-[507px] w-full"
+        type="email"
+      />
+    </div>
+  </div>
+</div>

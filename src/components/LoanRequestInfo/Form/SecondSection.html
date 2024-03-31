@@ -1,0 +1,36 @@
+<div class="flex xl:flex-row flex-col xl:gap-[116px] gap-4">
+  <p
+    class="xl:font-bold font-normal xl:text-xl text-sm flex-shrink-0 xl:w-[187px] w-full"
+  >
+    Рейтинг
+  </p>
+
+  <div class="space-y-6 w-full">
+    <div class="containerInput">
+      <label class="text-base font-bold" for="isOtherLoan"
+        >Есть ли другие кредиты/займы</label
+      >
+
+      <load src="src/components/LoanRequestInfo/Form/RadioButton.html" />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="sumOtherCredit"
+        >Сумма других кредитов/займов</label
+      >
+
+      <div class="max-w-[507px] flex w-full">
+        <input
+          id="sumOtherCredit"
+          name="sumOtherCredit"
+          placeholder="Сумма"
+          type="number"
+          min="1"
+        />
+        <load
+          src="src/components/LoanRequestQuestionnaire/Form/CurrencySelect.html"
+        />
+      </div>
+    </div>
+  </div>
+</div>

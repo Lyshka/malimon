@@ -1,0 +1,54 @@
+<div class="relative currencySelect">
+  <button
+  type="button"
+    class="w-[60px] h-[47px] rounded-main py-3 px-2 gap-[7px] justify-center items-center flex bg-white"
+  >
+    <span class="text-dark-secondary text-base uppercase currencyCurrent"
+      >BYN</span
+    >
+
+    <svg
+      class="flex-shrink-0 iconArrow transition-all duration-500"
+      width="12"
+      height="8"
+      viewBox="0 0 12 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.41 0.0800781L6 4.67008L10.59 0.0800781L12 1.50008L6 7.50008L0 1.50008L1.41 0.0800781Z"
+        fill="black"
+      />
+    </svg>
+  </button>
+
+  <div
+    class="absolute -bottom-2 translate-y-full rounded-main w-[60px] bg-white currencyList grid grid-rows-0 overflow-hidden transition-all duration-500 z-[1]"
+  >
+    <div class="min-h-0">
+      <button
+        data-currency="byn"
+        type="button"
+        class="text-dark-secondary text-base uppercase w-full py-3 px-2 h-[47px]"
+      >
+        BYN
+      </button>
+      <button
+        data-currency="rub"
+        type="button"
+        class="text-dark-secondary text-base uppercase w-full py-3 px-2 h-[47px]"
+      >
+        RUB
+      </button>
+      <button
+        data-currency="ua"
+        type="button"
+        class="text-dark-secondary text-base uppercase w-full py-3 px-2 h-[47px]"
+      >
+        UA
+      </button>
+    </div>
+  </div>
+
+  <input class="currencyValue" name="currency" value="byn" type="hidden">
+</div>

@@ -1,0 +1,63 @@
+<div class="flex xl:flex-row flex-col xl:gap-[116px] gap-0 xl:mt-16 mt-8">
+  <div class="flex-shrink-0 min-w-[187px] xl:block hidden">&nbsp;</div>
+
+  <div class="xl:space-y-16 space-y-8">
+    <div class="xl:space-y-5 space-y-3">
+      <div class="chexboxContainer">
+        <div
+          class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+        >
+          <input
+            class="absolute z-[1] w-full h-full opacity-0"
+            checked
+            name="infoTrue"
+            id="infoTrue"
+            type="checkbox"
+          />
+          <svg
+            class="opacity-0 checkIcon active transition-all"
+            width="18"
+            height="14"
+            viewBox="0 0 18 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+              fill="#FBE521"
+            />
+          </svg>
+        </div>
+
+        <label for="infoTrue" class="text-base">
+          Я гарантирую, что вся предоставленная информация правдивая и истинная
+        </label>
+      </div>
+
+      <p class="xl:text-base text-sm">
+        С другой стороны, получающий анкету, гарантирует, что конфиденциальная
+        информация будет<br />
+        обработана по всем правилам
+        <a class="underline" href="">Политики конфиденциальности</a>,
+        размещенной на сайте
+        <a class="text-primary" href="https://malimon.by/">malimon.by</a>
+      </p>
+    </div>
+
+    <div class="flex gap-4">
+      <button
+        type="submit"
+        class="bg-primary xl:w-[155px] w-full rounded-main xl:h-[47px] h-9 flex justify-center items-center px-5 text-dark-primary xl:text-base text-sm xl:font-bold font-normal"
+      >
+        Сохранить
+      </button>
+
+      <button
+        type="reset"
+        class="xl:w-[155px] w-full border border-yellow-10 rounded-main xl:h-[47px] h-9 flex justify-center items-center px-5 text-white xl:text-base text-sm xl:font-bold font-normal"
+      >
+        Очистить
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="flex xl:flex-row flex-col xl:gap-[116px] gap-4">
+  <p
+    class="xl:font-bold font-normal xl:text-xl text-sm flex-shrink-0 xl:w-[187px] w-full"
+  >
+    Займ
+  </p>
+
+  <div class="space-y-6 w-full">
+    <div class="containerInput">
+      <label class="text-base font-bold" for="loan">Займ</label>
+
+      <div class="max-w-[507px] flex w-full">
+        <input
+          id="loan"
+          name="loan"
+          placeholder="Сумма"
+          type="number"
+          min="1"
+        />
+        <load
+          src="src/components/LoanRequestQuestionnaire/Form/CurrencySelect.html"
+        />
+      </div>
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="loanTermMonth"
+        >Срок займа, мес.</label
+      >
+
+      <input
+        id="loanTermMonth"
+        name="loanTermMonth"
+        placeholder="16"
+        class="max-w-[507px] w-full"
+        type="number"
+      />
+    </div>
+
+    <div class="containerInput">
+      <label class="text-base font-bold" for="targetLoan"
+        >Цель займа</label
+      >
+
+      <input
+        id="targetLoan"
+        name="targetLoan"
+        placeholder="На покупку квартиры"
+        class="max-w-[507px] w-full"
+        type="text"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="xl:space-y-6 space-y-8 xl:!mt-6 !mt-2">
+  <div class="chexboxContainer">
+    <div
+      class="border border-primary rounded-main w-[25px] h-[25px] p-1 flex justify-center items-center chexbox relative"
+    >
+      <input
+        class="absolute z-[1] w-full h-full opacity-0"
+        checked
+        name="conf"
+        id="conf"
+        type="checkbox"
+      />
+      <svg
+        class="opacity-0 checkIcon active transition-all"
+        width="18"
+        height="14"
+        viewBox="0 0 18 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 1.41L6 13.41L0.5 7.91L1.91 6.5L6 10.58L16.59 0L18 1.41Z"
+          fill="#FBE521"
+        />
+      </svg>
+    </div>
+
+    <label for="conf" class="text-base">
+      Я принимаю Политику конфиденциальности
+    </label>
+  </div>
+
+  <div class="flex xl:flex-row flex-col xl:items-center items-start xl:gap-6 gap-3 xl:max-w-full max-w-[206px]">
+    <button
+      type="submit"
+      id="request"
+      class="px-5 py-3 bg-primary rounded-main text-dark-primary xl:h-[47px] h-9 xl:text-base text-sm xl:font-bold font-normal flex justify-center items-center"
+    >
+      Запросить
+    </button>
+
+    <label class="xl:text-base text-sm" for="request"
+      >Нажмите кнопку "Запросить" и вас перенаправит на МСИ</label
+    >
+  </div>
+</div>

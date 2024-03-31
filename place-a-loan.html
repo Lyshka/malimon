@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="w-full">
+    <load src="src/components/Header.html" />
+
+    <div
+      class="container-main mx-auto xl:pt-20 pt-4 xl:pb-[100px] pb-12 xl:space-y-[100px] space-y-[45px]"
+    >
+      <load src="src/components/placeALoan/Form/" />
+      <load src="src/components/placeALoan/Accardion/" />
+      
+      <div class="xl:block hidden">
+        <load src="src/components/CardNotRegister/Newsletter/" />
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/script/placeALoan/index.ts"></script>
+    <load src="src/components/Footer.html" />
+  </body>
+</html>
