@@ -1,4 +1,6 @@
-const multipleSelectElements = document.querySelectorAll(".multipleSelect");
+const multipleSelectElements = [
+  ...document.querySelectorAll(".multipleSelect"),
+] as HTMLElement[];
 
 multipleSelectElements.forEach((multipleSelect) => {
   const openMultipleSelect = multipleSelect.querySelector(
@@ -20,6 +22,8 @@ multipleSelectElements.forEach((multipleSelect) => {
 
   if (!activeSelectMultiple) return;
 
+  const placeholderFirstText = placeholderSelectMultiple.textContent;
+
   openMultipleSelect?.addEventListener("click", (event) => {
     event.stopImmediatePropagation();
 
@@ -30,6 +34,8 @@ multipleSelectElements.forEach((multipleSelect) => {
       multipleSelectList?.querySelectorAll("button");
 
     let arraySelectedValue: string[] = [];
+
+    const selectType = multipleSelect.dataset["selectType"];
 
     multipleSelectButtonElements?.forEach((multipleSelectButton) => {
       multipleSelectButton.onclick = () => {
@@ -48,13 +54,17 @@ multipleSelectElements.forEach((multipleSelect) => {
             (el) => el !== selectedValue
           );
         } else {
-          arraySelectedValue.push(selectedValue);
+          if (arraySelectedValue.length && selectType) {
+            arraySelectedValue = [];
+            arraySelectedValue.push(selectedValue);
+          } else {
+            arraySelectedValue.push(selectedValue);
+          }
         }
 
         if (arraySelectedValue.length === 0) {
           placeholderSelectMultiple.style.display = "block";
-          placeholderSelectMultiple.textContent =
-            "Выберите поручителей по займу";
+          placeholderSelectMultiple.textContent = placeholderFirstText;
           activeSelectMultiple.appendChild(placeholderSelectMultiple);
         } else {
           activeSelectMultiple.innerHTML = arraySelectedValue
@@ -88,14 +98,34 @@ multipleSelectElements.forEach((multipleSelect) => {
           }
         };
 
-        visibleAdditionalInput("Иные лица (указать)", "anotherContainer");
-        visibleAdditionalInput("Работа", "PlaceOfWorkContainer");
-        visibleAdditionalInput(
-          "Предпринимательская деятельность",
-          "entrepreneurialActivityContainer"
-        );
-        visibleAdditionalInput("Прочее", "otherContainer");
+        const AllVisibleAdditionalInput = () => {
+          visibleAdditionalInput("Иные лица (указать)", "anotherContainer");
+          visibleAdditionalInput("Работа", "PlaceOfWorkContainer");
+          visibleAdditionalInput(
+            "Предпринимательская деятельность",
+            "entrepreneurialActivityContainer"
+          );
+          visibleAdditionalInput("Прочее", "otherContainer");
+        };
+
+        AllVisibleAdditionalInput();
+
+        if (!inputValue.form || !openMultipleSelect) return;
+
+        inputValue.form.addEventListener("reset", () => {
+          arraySelectedValue = [];
+          inputValue.value = "";
+          activeSelectMultiple.textContent = placeholderFirstText;
+          AllVisibleAdditionalInput();
+        });
       };
     });
+  });
+
+  if (!inputValue.form || !openMultipleSelect) return;
+
+  inputValue.form.addEventListener("reset", () => {
+    inputValue.value = "";
+    activeSelectMultiple.textContent = placeholderFirstText;
   });
 });

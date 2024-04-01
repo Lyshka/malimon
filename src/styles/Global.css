@@ -114,7 +114,21 @@
     @apply text-primary border-primary;
   }
 
-  .PlaceOfWorkContainer.active, .entrepreneurialActivityContainer.active, .otherContainer.active {
+  .PlaceOfWorkContainer.active,
+  .entrepreneurialActivityContainer.active,
+  .otherContainer.active {
     @apply grid-rows-1 !mb-6;
+  }
+
+  [data-error].active {
+    @apply inline;
+  }
+
+  [data-error].error {
+    @apply text-rose-500;
+  }
+
+  [data-error].success {
+    @apply text-lime-500;
   }
 }

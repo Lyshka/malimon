@@ -13,13 +13,21 @@
         <load src="src/components/Tooltip.html" />
       </div>
 
-      <input
-        id="login"
-        name="login"
-        placeholder="Введите ваш логин"
-        class="max-w-[507px] w-full"
-        type="text"
-      />
+      <div class="max-w-[507px] w-full relative">
+        <input
+          id="login"
+          name="login"
+          placeholder="Введите ваш логин"
+          type="text"
+        />
+
+        <span
+          data-error=""
+          data-success="Этот логин доступен"
+          class="text-sm absolute left-0 -bottom-5"
+        >
+        </span>
+      </div>
     </div>
 
     <div class="containerInput">
